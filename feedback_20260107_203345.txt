@@ -1,0 +1,25 @@
+URL: https://github.com/edenboh/Mandatory10/blob/main/anagram_checker.py
+suggestions for improvement:
+- Consider using a set instead of a list for `self.words` in the `__init__` method to improve the performance of `is_valid_word`.  Checking for membership in a set is O(1) on average, while it is O(n) for a list.
+- In `get_anagrams`, converting `data` to lowercase and stripping whitespace in the loop can be combined for slight performance gains.
+- Instead of iterating and then removing in get_anagrams, use a list comprehension to filter out the original word during anagram creation for better efficiency.
+Correctness: 100%
+-----
+URL: https://github.com/edenboh/Mandatory10/blob/main/anagrams.py
+suggestions for improvement:
+- The code in `anagrams.py` handles user input and interacts with the `AnagramChecker` class, but the `AnagramChecker` class implementation is missing. The provided code expects `AnagramChecker` to exist and have the methods `is_valid_word` and `get_anagrams` but it doesn't exist.
+- The code should include error handling or a default case when `get_anagrams` returns an empty list, to avoid misleading the user.
+- Consider using a more robust method for exiting the loop, perhaps by setting a flag variable instead of relying on a direct string comparison.
+Correctness: 70%
+-----
+URL: https://github.com/edenboh/Mandatory10/blob/main/sowpods.txt
+suggestions for improvement:
+- The provided text file appears to be a word list, which is required for the anagram checker program. However, this code itself doesn't implement any of the required functionalities like the AnagramChecker class or the anagram-finding logic.  It's just a data file.
+- It needs to be incorporated into a Python script to be functional.
+- This appears to be a partial word list file. It does not correspond to any explicit functionality requested in the instructions.
+- As it is not code, 'readability', 'performance', and 'security' do not apply.
+- This is just a text file containing words; it doesn't contain any code related to the Chapter's content.  It's likely intended to be used by the Python scripts, but in itself doesn't perform any actions.
+- As there is no code, it does not need to be read or executed, and cannot possibly address the functional requirements of the anagram checker.
+- If this file is meant to be part of the project, ensure that the associated Python code is included to process it.
+Correctness: 0.0%
+-----
