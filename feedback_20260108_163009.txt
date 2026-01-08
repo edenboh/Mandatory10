@@ -1,0 +1,10 @@
+URL: https://github.com/edenboh/Mandatory10/blob/main/DailyChallenge.py
+suggestions for improvement:
+- In the `Card` class, you are checking `Card.possible_suits` and `Card.possible_values` but these attributes are not initialized with underscore in their name. While you initialize `possibleSuit` and `possibleValue` inside of the Card and Deck class, it is better to define this only once and inheret from card class.
+- The `deal` method in the `Deck` class can be simplified by using `self.deck.pop()` instead of `random.choice` and `self.deck.remove`.  `pop()` also implicitly checks if the deck is empty before attempting to deal a card, which avoids using the if statement.
+Brief justification:
+- correctness: The code correctly answers the questions in Part 1 and implements the card and deck classes as requested in Part 2. The code correctly creates cards with suits and values, and the `Deck` class shuffles and deals cards. The only improvement would be in the deal method, which can be simplified using `pop()` to remove a random card.  It directly addresses the chapter content and fulfills the requirements.
+- readability: The code is generally well-structured and easy to follow, but could benefit from more comments to explain the logic behind certain decisions. Variable names are descriptive, and the code is properly indented.
+- performance: The code's performance is adequate for the given task. Shuffling the deck and dealing cards are performed efficiently, and there are no obvious performance bottlenecks.
+- security: The code does not appear to have any major security vulnerabilities. However, it's good practice to validate the input data to ensure that it conforms to the expected format. The card class validation prevents invalid cards from being instantiated, which slightly improves data integrity.
+
